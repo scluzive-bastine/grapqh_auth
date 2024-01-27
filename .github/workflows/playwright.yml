@@ -5,24 +5,6 @@ on:
   pull_request:
     branches: [ main, master ]
 jobs:
-  app:
-    timeout-minutes: 60
-    runs-on: ubuntu-latest
-    env: 
-      MONGO_URI: ${{ secrets.MONGO_URI }}
-      NEXT_PUBLIC_URL_SERVER_GRAPHQL: ${{ secrets.NEXT_PUBLIC_URL_SERVER_GRAPHQL }}
-      JWT_SECRET: ${{ secrets.JWT_SECRET }}
-      NEXT_PUBLIC_BASE_URL: ${{ secrets.NEXT_PUBLIC_BASE_URL }}
-      NEXT_PUBLIC_MONGO_URI: ${{ secrets.NEXT_PUBLIC_MONGO_URI }}
-    steps:
-    - uses: actions/checkout@v3
-    - uses: actions/setup-node@v3
-      with:
-        node-version: 18
-    - name: Install dependencies
-      run: npm ci
-    - name: Run application
-      run: npm run dev
   test:
       timeout-minutes: 60
       runs-on: ubuntu-latest

@@ -1,5 +1,4 @@
 import { defineConfig, devices } from "@playwright/test"
-const URL = "http://localhost:3000"
 
 /**
  * Read environment variables from file.
