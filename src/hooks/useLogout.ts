@@ -25,8 +25,9 @@ const useLogoutMutation = () => {
       )
       return data
     },
-    onSuccess: () => {
+    onSuccess: (data: any) => {
       // Remove the authorization cookie
+      router.refresh()
       router.push("/login")
       Cookies.remove("authorization")
       store.setAuthUser(null)
