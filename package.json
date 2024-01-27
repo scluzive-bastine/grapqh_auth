@@ -22,6 +22,7 @@
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
     "cookie": "^0.6.0",
+    "dotenv": "^16.4.1",
     "graphql-request": "^6.1.0",
     "graphql-yoga": "^5.1.1",
     "js-cookie": "^3.0.5",
