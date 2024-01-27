@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "ts-node seed.js && next dev ",
+    "dev": "node seed.js && next dev ",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
