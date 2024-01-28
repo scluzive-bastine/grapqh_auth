@@ -16,7 +16,7 @@ test("Register form works correctly", async ({ page }) => {
   await page.waitForURL("/login")
 
   // Verify that the profile page is loaded
-  expect(page.url()).toBe("https://grapqh-auth.vercel.app/profile")
+  expect(page.url()).toBe("http://localhost:3000/login")
 })
 
 // You can add more tests as needed
